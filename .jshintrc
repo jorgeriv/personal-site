@@ -18,5 +18,8 @@
   "trailing": true,
   "sub": true,
   "maxlen": 80,
-  "strict": true
+  "strict": true,
+  "globals": {
+    "angular": false
+  }
 }

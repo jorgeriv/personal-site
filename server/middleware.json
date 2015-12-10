@@ -22,7 +22,7 @@
   },
   "files": {
     "loopback#static": {
-      "params": "$!../dist"
+      "params": "$!../src"
     }
   },
   "final": {

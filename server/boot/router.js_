@@ -1,0 +1,7 @@
+module.exports = function(app) { 'use strict';
+  var router = app.loopback.Router();
+  router.get('/*', function(req, res) {
+    res.sendfile('');
+  });
+  app.use(router);
+};

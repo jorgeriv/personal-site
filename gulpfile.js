@@ -1,34 +1,32 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
-var livereload = require('gulp-livereload');
+var browserSync = require('browser-sync');
 var minifyHtml = require('gulp-minify-html');
 var usemin = require('gulp-usemin');
 var rev = require('gulp-rev');
 var minifyCss = require('gulp-minify-css');
+const exec = require('child_process').exec;
 
 gulp.task('scripts',  function(){
   'use strict';
   gulp.src(['app/**/*.js'])
       .pipe(browserify())
       .pipe(concat('scripts.js'))
-      .pipe(gulp.dest('dist/js'))
-      .pipe(livereload());
+      .pipe(gulp.dest('dist/js'));
 });
 gulp.task('sass', function(){
 
 });
 
 gulp.task('css', function(){
-
 });
 
 gulp.task('html', function(){
   'use strict';
   gulp.src(['src/app/**/*.html'])
     .pipe(minifyHtml({empty: true}))
-    .pipe(gulp.dest('dist'))
-    .pipe(livereload());
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('usemin', function() {
@@ -44,9 +42,20 @@ gulp.task('usemin', function() {
     .pipe(gulp.dest('build/'));
 });
 
-gulp.task('develop', function(){
+
+gulp.task('develop', function(cb){
   'use strict';
-  livereload.listen();
-  gulp.watch('src/app/**/*.js', ['scripts']);
-  gulp.watch('src/app/**/*.html', ['html']);
+  browserSync.init({
+      proxy: '127.0.0.1:8080'
+  });
+  gulp.watch('src/app/**/*.js', ['scripts'], browserSync.reload);
+  gulp.watch('src/app/**/*.html', ['html'], browserSync.reload);
+  gulp.watch('src/app/**/*.css').on('change', browserSync.reload);
+  /*
+  exec('./server/server.js', function(err, stdout, stderr){
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+  */
 });

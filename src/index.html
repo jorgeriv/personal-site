@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/pure/grids-responsive-min.css">
 <!--<![endif]-->
   <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="app/layout.css">
   <script src="assets/angular/angular.min.js"></script>
   <script src="assets/angular-route/angular-route.min.js"></script>
   <script src="app/main.js"></script>
@@ -23,6 +24,15 @@
   <!-- home-->
 </head>
 <body ng-app="personal-site">
+  <nav id="main-menu" class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list tabs">
+        <li class="pure-menu-item active"><a href="#" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item blue"><a href="#" class="pure-menu-link">Resume</a></li>
+        <li class="pure-menu-item purple"><a href="#" class="pure-menu-link">Blog</a></li>
+        <li class="pure-menu-item green"><a href="#" class="pure-menu-link">Proyects</a></li>
+        <li class="pure-menu-item red"><a href="#" class="pure-menu-link">Other</a></li>
+    </ul>
+</nav>
   <ng-view></ng-view>
 </body>
 </html>

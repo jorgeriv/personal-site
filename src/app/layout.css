@@ -1,9 +1,19 @@
 /* Main menu */
 #main-menu{
-  background: #dadada;
-  border-bottom: 1px solid #d0d0d0;
+  background: #232f3e;
 }
 
+#main-menu a{
+  color: #eee;
+}
+
+#main-menu a:hover{
+  background-color: inherit;
+  text-decoration: underline;
+}
+h1{
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 /* Tabs */
 .tabs li{
   border: 1px solid #aaa;
@@ -46,4 +56,13 @@
 
 .orange{
   background-color: rgb(243, 123, 29);
+  color: #fff;
 }
+
+.dark-gray{
+  background-color: #222;
+  color:#eee;
+}
+ .content{
+   padding: 1em 2em;
+ }

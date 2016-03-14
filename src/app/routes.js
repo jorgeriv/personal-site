@@ -15,6 +15,10 @@
             templateUrl: 'app/components/blog/blog.template.html',
             controller: 'blogCtrlr'
           })
+          .when('/resume', {
+            templateUrl: 'app/components/resume/resume.template.html',
+            controller: 'resumeCtrlr'
+          })
           .otherwise({
             redirectTo: '/home'
           });

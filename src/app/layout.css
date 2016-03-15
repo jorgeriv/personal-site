@@ -66,3 +66,13 @@ h1{
  .content{
    padding: 1em 2em;
  }
+
+/* Blog */
+.sidebar{
+  position:fixed;
+  top:34px;
+  bottom: 0;
+}
+#main-blog-container{
+  margin-left:25%;
+}

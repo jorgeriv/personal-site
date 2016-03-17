@@ -38,16 +38,6 @@ h3 {
   border-radius: 50%;
 }
 
-.main-menu{
-  margin-bottom: 200px;
-}
 .main-menu i{
   font-size: 2em;
-}
-
-footer{
-  background-color: #f0f0f0;
-  color: #999;
-  text-align: center;
-  padding: 1.5em;
 }

@@ -115,6 +115,32 @@ h1{
   border-radius: 2px;
 }
 
+.tag{
+  display: inline-block;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+  background-color: #ebe378;
+  padding: 3px 6px;
+  margin: 2px 10px 2px 6px;
+  position: relative;
+  box-shadow: -2px 2px 2px black;
+}
+.tag:hover{
+  text-decoration: underline;
+}
+.tag::after{
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ebe378;
+  border-right: 10px solid transparent;
+  display: block;
+  margin-top: -10px;
+}
 footer{
   position:absolute;
   bottom: 0;

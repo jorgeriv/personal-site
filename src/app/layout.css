@@ -121,26 +121,15 @@ h1{
   text-decoration: none;
   color: black;
   background-color: #ebe378;
-  padding: 3px 6px;
-  margin: 2px 10px 2px 6px;
-  position: relative;
-  box-shadow: -2px 2px 2px black;
+  padding: 3px 4px;
+  margin: 2px 0;
+  border-left: 5px solid #8b8300;
+  border-radius: 2px;
 }
 .tag:hover{
   text-decoration: underline;
 }
-.tag::after{
-  content:"";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #ebe378;
-  border-right: 10px solid transparent;
-  display: block;
-  margin-top: -10px;
-}
+
 footer{
   position:absolute;
   bottom: 0;

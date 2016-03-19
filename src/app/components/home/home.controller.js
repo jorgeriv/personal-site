@@ -2,7 +2,10 @@
   'use strict';
 
   angular.module('personal-site')
-    .controller('homeCtrlr', ['$scope', function($scope){
+    .controller('homeController', ['$scope', homeController]);
+
+    function homeController($scope){
       $scope.pagina = 'home';
-    }]);
+    }
+
 }());

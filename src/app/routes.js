@@ -9,15 +9,15 @@
         $routeProvider
           .when('/home', {
             templateUrl: 'app/components/home/home.template.html',
-            controller: 'homeCtrlr'
+            controller: 'homeController'
           })
           .when('/blog', {
             templateUrl: 'app/components/blog/blog.template.html',
-            controller: 'blogCtrlr'
+            controller: 'blogController'
           })
           .when('/resume', {
             templateUrl: 'app/components/resume/resume.template.html',
-            controller: 'resumeCtrlr'
+            controller: 'resumeController'
           })
           .otherwise({
             redirectTo: '/home'

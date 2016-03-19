@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="app/layout.css">
   <script src="assets/angular/angular.min.js"></script>
   <script src="assets/angular-route/angular-route.min.js"></script>
-  <script src="app/main.js"></script>
+  <script src="app/components/main/main.js"></script>
   <script src="app/routes.js"></script>
   <!-- home component -->
   <script src="app/components/home/home.module.js"></script>
@@ -34,7 +34,7 @@
   <!-- blog-->
 </head>
 <body ng-app="personal-site">
-  <div id="wrapper">
+  <div id="wrapper" ng-controller="mainController">
     <nav id="main-menu" class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
         <!--<a href="#" class="pure-menu-heading pure-menu-link">Jorge Rivera</a>-->

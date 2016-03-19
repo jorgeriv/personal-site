@@ -1,7 +1,7 @@
 (function(){ 'use strict';
-  angular.module('personal-site')
+  angular.module('resume')
     .controller('resumeController',['$scope', resumeController]);
     function resumeController($scope){
-      
+
     }
 }());

@@ -1,8 +1,8 @@
 (function(){ 'use strict';
-  angular.module('personal-site')
+  angular.module('blog')
     .controller('blogController', ['$scope', blogController]);
 
     function blogController($scope){
-      
+
     }
 }());

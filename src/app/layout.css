@@ -2,6 +2,8 @@ html,body{
   height: 100%;
 }
 
+body{font-size: 14px}
+
 #wrapper{
   position: absolute;
   min-height: 100%;
@@ -12,6 +14,11 @@ html,body{
   background: #232f3e;
   position:fixed;
   top:0;
+  font-size: 1em;
+}
+
+#main-menu nav ul{
+  display: inline-block;
 }
 
 #main-menu a{
@@ -133,8 +140,24 @@ h1{
 footer{
   position:absolute;
   bottom: 0;
-  background-color: #f0f0f0;
+  background-color: #232f3e;
   color: #999;
   text-align: center;
   padding: 1.5em;
+}
+
+.right{
+  float: right;
+}
+
+#loginFrm{
+  display: inline-block;
+}
+
+#loginFrm fieldset{
+  padding: 5px 0 1px 0;
+}
+
+#loginFrm input, #loginFrm button{
+  padding: .1em .3em;
 }

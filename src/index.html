@@ -15,8 +15,11 @@
   <link rel="stylesheet" href="app/layout.css">
   <script src="assets/angular/angular.min.js"></script>
   <script src="assets/angular-route/angular-route.min.js"></script>
+  <script src="assets/ng-resource/dist/ng-resource.min.js"></script>
+  <script src="app/common/REST/rest.module.js"></script>
+  <script src="app/common/REST/user.factory.js"></script>
   <script src="app/components/main/main.js"></script>
-    <script src="app/components/main/main.controller.js"></script>
+  <script src="app/components/main/main.controller.js"></script>
   <script src="app/routes.js"></script>
   <!-- home component -->
   <script src="app/components/home/home.module.js"></script>
@@ -37,6 +40,17 @@
 <body ng-app="personal-site">
   <div id="wrapper" ng-controller="mainController">
     <nav id="main-menu" class="pure-menu pure-menu-horizontal">
+      <div class="right">
+        <a href="#"><i class="fa fa-sign-in"></i> Log In</a>
+        <a href="#"><i class="fa fa-sign-out"></i> Log Out</a>
+        <form id="loginFrm" class="pure-form">
+          <fieldset>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+          </fieldset>
+        </form>
+      </div>
       <ul class="pure-menu-list">
         <!--<a href="#" class="pure-menu-heading pure-menu-link">Jorge Rivera</a>-->
         <li class="pure-menu-item active"><a href="#" class="pure-menu-link">Home</a></li>

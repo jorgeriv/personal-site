@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="app/layout.css">
   <script src="assets/angular/angular.min.js"></script>
   <script src="assets/angular-route/angular-route.min.js"></script>
-  <script src="assets/ng-resource/dist/ng-resource.min.js"></script>
+  <script src="assets/angular-resource/angular-resource.min.js"></script>
   <script src="app/common/REST/rest.module.js"></script>
   <script src="app/common/REST/user.factory.js"></script>
   <script src="app/components/main/main.js"></script>
@@ -29,31 +29,35 @@
   <!-- resume component -->
   <script src="app/components/resume/resume.module.js"></script>
   <script src="app/components/resume/resume.controller.js"></script>
-  <!--<link rel="stylesheet" href="app/components/resume/resume.style.css">-->
   <!-- resume-->
   <!-- blog component -->
   <script src="app/components/blog/blog.module.js"></script>
   <script src="app/components/blog/blog.controller.js"></script>
-  <!--<link rel="stylesheet" href="app/components/blog/blog.style.css">-->
+  <!-- blog-->
+
+  <!-- blog topBar -->
+  <script src="app/components/top-bar/topBar.module.js"></script>
+  <script src="app/components/top-bar/topBar.controller.js"></script>
   <!-- blog-->
 </head>
 <body ng-app="personal-site">
   <div id="wrapper" ng-controller="mainController">
-    <nav id="main-menu" class="pure-menu pure-menu-horizontal">
+    <nav id="main-menu" class="pure-menu pure-menu-horizontal" ng-controller="topBarController">
       <div class="right">
-        <a href="#"><i class="fa fa-sign-in"></i> Log In</a>
-        <a href="#"><i class="fa fa-sign-out"></i> Log Out</a>
-        <form id="loginFrm" class="pure-form">
+        <a href="#" ng-click="doShowFrm()" ng-if="!signedIn || !showFrm"><i class="fa fa-sign-in"></i> Log In</a>
+        <a href="#" ng-if="signedIn"><i class="fa fa-sign-out"></i> Log Out</a>
+        <form id="loginFrm" class="pure-form" ng-if="showFrm" ng-submit="logIn()">
           <fieldset>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email" ng-model="loginFrm.email">
+            <input type="password" placeholder="Password" ng-model="loginFrm.password">
             <button type="submit" class="pure-button pure-button-primary">Sign in</button>
           </fieldset>
         </form>
       </div>
+       <span class="pure-menu-heading">Jorge Rivera</span>
       <ul class="pure-menu-list">
         <!--<a href="#" class="pure-menu-heading pure-menu-link">Jorge Rivera</a>-->
-        <li class="pure-menu-item active"><a href="#" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link current">Home</a></li>
         <li class="pure-menu-item"><a href="#/resume" class="pure-menu-link">Resume</a></li>
         <li class="pure-menu-item"><a href="#/blog" class="pure-menu-link">Blog</a></li>
         <li class="pure-menu-item"><a href="#/proyects" class="pure-menu-link">Proyects</a></li>

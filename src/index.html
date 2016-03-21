@@ -16,8 +16,7 @@
   <script src="assets/angular/angular.min.js"></script>
   <script src="assets/angular-route/angular-route.min.js"></script>
   <script src="assets/angular-resource/angular-resource.min.js"></script>
-  <script src="app/common/REST/rest.module.js"></script>
-  <script src="app/common/REST/user.factory.js"></script>
+  <script src="app/common/lb-ng/lb-services.js"></script>
   <script src="app/components/main/main.js"></script>
   <script src="app/components/main/main.controller.js"></script>
   <script src="app/routes.js"></script>
@@ -44,8 +43,8 @@
   <div id="wrapper" ng-controller="mainController">
     <nav id="main-menu" class="pure-menu pure-menu-horizontal" ng-controller="topBarController">
       <div class="right">
-        <a href="#" ng-click="doShowFrm()" ng-if="!signedIn || !showFrm"><i class="fa fa-sign-in"></i> Log In</a>
-        <a href="#" ng-if="signedIn"><i class="fa fa-sign-out"></i> Log Out</a>
+        <a href="#" ng-click="doShowFrm()" ng-if="!loggedIn || showFrm"><i class="fa fa-sign-in"></i> Log In</a>
+        <a href="#" ng-click="logOut()" ng-if="loggedIn"><i class="fa fa-sign-out"></i> Log Out</a>
         <form id="loginFrm" class="pure-form" ng-if="showFrm" ng-submit="logIn()">
           <fieldset>
             <input type="email" placeholder="Email" ng-model="loginFrm.email">

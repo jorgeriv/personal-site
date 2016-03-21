@@ -240,3 +240,21 @@ footer{
   font-weight: lighter;
   text-align:  center;
 }
+
+#hero-menu{
+  font-size: 1.6em;
+  text-align: center;
+  background-color: #131f2e; /*#414c5f;*/
+}
+
+#hero-menu .pure-menu-link{
+    color: #b3bfce;
+}
+
+#hero-menu .pure-menu-selected{
+  border-bottom: 3px solid orange;
+}
+
+#hero-menu .pure-menu-selected .pure-menu-link{
+  color: orange;
+}

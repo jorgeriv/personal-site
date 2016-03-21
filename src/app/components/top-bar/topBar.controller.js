@@ -1,9 +1,13 @@
 (function(){'use strict';
   angular.module('topBar')
-    .controller('topBarController', ['$scope', 'RESTuser', topBarController]);
+    .controller('topBarController', [
+      '$rootScope',
+      '$scope',
+      'User',
+      topBarController
+    ]);
 
-    function topBarController($scope, RESTuser){
-      $scope.signedIn = false;
+    function topBarController($rootScope, $scope, User){
       $scope.showFrm = false;
       $scope.loginFrm = {};
       $scope.doShowFrm = function doShowFrm(){
@@ -11,17 +15,19 @@
       };
 
       $scope.logIn = function logIn(){
-        var login = new RESTuser();
-        login.email = $scope.loginFrm.email;
-        login.password = $scope.loginFrm.password;
-        login.$save()
-          .then(function(res){
-            $scope.signedIn = true;
-            return console.log(res);
-          })
-          .catch(function(err){
-            return console.error(err);
-          });
+        $scope.loginResult = User.login($scope.loginFrm,
+          function(){
+          $rootScope.loggedIn = true;
+          $scope.showFrm = false;
+        }, function(err){
+          console.log(err);
+          $scope.showFrm = false;
+        });
       };
+
+      $scope.logOut = function logOut(){
+        localStorage.clear();
+        $rootScope.loggedIn = false;
+      }
     }
 }());

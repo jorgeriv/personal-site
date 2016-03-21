@@ -2,7 +2,7 @@
   'use strict';
   angular.module('personal-site', [
     'ngRoute',
-    'REST',
+    'lbServices',
     'blog',
     'resume',
     'home',

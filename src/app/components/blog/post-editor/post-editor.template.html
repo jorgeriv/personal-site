@@ -1,22 +1,22 @@
 <div id="post-editor-controls">
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-meunu-list right">
-      <li class="pure-menu-item"><a class="pure-menu-link" href="#" title="New Post"><i class="fa fa-plus"></i></a></li>
-      <li class="pure-menu-item"><a class="pure-menu-link" href="#" title="Publish"><i class="fa fa-paper-plane"></i></a></li>
-      <li class="pure-menu-item"><a class="pure-menu-link" href="#" title="Save draft"><i class="fa fa-save"></i></a></li>
-      <li class="pure-menu-item"><a class="pure-menu-link" href="#" title="Discard"><i class="fa fa-ban"></i></a></li>
+      <li class="pure-menu-item"><a class="pure-menu-link" title="New Post"><i class="fa fa-plus"></i></a></li>
+      <li class="pure-menu-item"><a ng-click="publish()" class="pure-menu-link" title="Publish"><i class="fa fa-paper-plane"></i></a></li>
+      <li class="pure-menu-item"><a ng-click="saveDraft()" class="pure-menu-link" title="Save draft"><i class="fa fa-save"></i></a></li>
+      <li class="pure-menu-item"><a ng-click="discard()"class="pure-menu-link" title="Discard"><i class="fa fa-ban"></i></a></li>
     </ul>
   </div>
 </div>
 <form class="pure-form" method="post">
-  <input class="pure-input-1" type="text" placeholder="Title">
+  <input ng-model="post.title" class="pure-input-1" type="text" placeholder="Title">
   <textarea id="wysiwyg-editor"></textarea>
-  <select name="category" id="category">
+  <select ng-model="post.category" name="category" id="category">
     <option value="Development">Development</option>
     <option value="LifeStyle">Life Style</option>
     <option value="Travel">Travel</option>
     <option value="Hobbies">Hobbies</option>
     <option value="Other">Other</option>
   </select>
-  <tags-input ng-model="tags"></tags-input>
+  <tags-input ng-model="post.tags"></tags-input>
 </form>

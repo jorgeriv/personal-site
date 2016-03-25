@@ -4,6 +4,10 @@ html,body{
 
 body{font-size: 12px}
 
+a[ng-click]{
+  cursor: pointer;
+}
+
 #wrapper{
   position: absolute;
   min-height: 100%;

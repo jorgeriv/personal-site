@@ -1,19 +1,33 @@
 (function(){'use strict';
 angular.module('postEditor')
-.directive('postEditor', [postEditor]);
+.directive('postEditor', ['Post', postEditor]);
 
-function postEditor(){
+function postEditor(Post){
   return {
     templateUrl:'app/components/blog/post-editor/post-editor.template.html',
     restrict: 'E',
     scope: {},
     controller: ['$scope', function($scope){
-      $scope.tags = [
-        { text: 'just' },
-        { text: 'some' },
-        { text: 'cool' },
-        { text: 'tags' }
-      ];
+      $scope.post = Post.create({});
+
+      $scope.discard = function discard(){
+          $scope.post = Post.create({});
+      };
+
+      $scope.saveDraft = function saveDraft(){
+        $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
+        $scope.post.status = 'draft';
+        $scope.post.date = new Date();
+        $scope.post.$save();
+      };
+
+      $scope.publish = function publish(){
+        $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
+        $scope.post.status = 'published';
+        $scope.post.date = new Date();
+        $scope.post.$save();
+      };
+
     }],
     link: function(scope, element, attr){
       tinymce.init({

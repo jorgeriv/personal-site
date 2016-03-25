@@ -1,8 +1,8 @@
 (function(){ 'use strict';
   angular.module('blog')
-    .controller('blogController', ['$scope', blogController]);
+    .controller('blogController', ['$scope', 'Post', blogController]);
 
-    function blogController($scope){
-
+    function blogController($scope, Post){
+      $scope.posts = Post.find({});
     }
 }());

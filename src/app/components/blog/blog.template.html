@@ -61,6 +61,19 @@
       </section>
     </div>
     <div class="posts">
+      <h1>Dinamically loaded</h1>
+      <section class="post" ng-repeat="post in posts">
+        <header class="post-header">
+          <p class="post-date">{{post.date}}</p>
+          <h2 class="post-title">{{post.title}}</h2>
+          <p class="post-meta">
+            By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
+          </p>
+        </header>
+        <div class="post-description">
+          <p>{{post.content}}</p>
+        </div>
+      </section>
       <h1 class="content-subhead">Recent Posts</h1>
       <section class="post">
         <header class="post-header">

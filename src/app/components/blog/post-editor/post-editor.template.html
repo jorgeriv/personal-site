@@ -1,14 +1,14 @@
 <div id="post-editor-controls">
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-meunu-list right">
-      <li class="pure-menu-item"><a class="pure-menu-link" title="New Post"><i class="fa fa-plus"></i></a></li>
-      <li class="pure-menu-item"><a ng-click="publish()" class="pure-menu-link" title="Publish"><i class="fa fa-paper-plane"></i></a></li>
-      <li class="pure-menu-item"><a ng-click="saveDraft()" class="pure-menu-link" title="Save draft"><i class="fa fa-save"></i></a></li>
-      <li class="pure-menu-item"><a ng-click="discard()"class="pure-menu-link" title="Discard"><i class="fa fa-ban"></i></a></li>
+      <li ng-if="!active" class="pure-menu-item"><a ng-click=toggleState() class="pure-menu-link" title="New Post"><i class="fa fa-plus"></i></a></li>
+      <li ng-if="active" class="pure-menu-item"><a ng-click="publish()" class="pure-menu-link" title="Publish"><i class="fa fa-paper-plane"></i></a></li>
+      <li ng-if="active" class="pure-menu-item"><a ng-click="saveDraft()" class="pure-menu-link" title="Save draft"><i class="fa fa-save"></i></a></li>
+      <li ng-if="active" class="pure-menu-item"><a ng-click="discard()"class="pure-menu-link" title="Discard"><i class="fa fa-ban"></i></a></li>
     </ul>
   </div>
 </div>
-<form class="pure-form" method="post">
+<form  ng-show="active" class="pure-form" method="post">
   <input ng-model="post.title" class="pure-input-1" type="text" placeholder="Title">
   <textarea id="wysiwyg-editor"></textarea>
   <select ng-model="post.category" name="category" id="category">

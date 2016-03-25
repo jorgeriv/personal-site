@@ -8,39 +8,52 @@ function postEditor(Post){
     restrict: 'E',
     scope: {},
     controller: ['$scope', function($scope){
-      $scope.post = Post.create({});
+      var tinymceConfig = {
+        selector: '#wysiwyg-editor',
+        menubar: false,
+        toolbar: 'undo redo | styleselect | bold italic | link image'
+      };
+
+      function savePost(){
+        $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
+        $scope.post.date = new Date();
+        $scope.post.$save()
+        .then(function(result){
+          $scope.$parent.posts.unshift(result);
+          $scope.discard();
+        })
+        .catch(function(err){
+          console.error(err);
+        });
+      }
+
+      $scope.active = false;
+      $scope.toggleState = function toggleState(){
+        $scope.active = !$scope.active;
+      };
+
+      tinymce.init(tinymceConfig);
+      $scope.post = new Post();
 
       $scope.discard = function discard(){
-          $scope.post = Post.create({});
+        tinymce.get('wysiwyg-editor').setContent('');
+        $scope.post = new Post();
+        $scope.toggleState();
       };
 
       $scope.saveDraft = function saveDraft(){
-        $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
         $scope.post.status = 'draft';
-        $scope.post.date = new Date();
-        $scope.post.$save()
-          .then(function(result){
-            $scope.$parent.posts.unshift(result);
-          })
-          .catch(function(err){
-            console.error(err);
-          });
+        savePost();
       };
 
       $scope.publish = function publish(){
-        $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
         $scope.post.status = 'published';
-        $scope.post.date = new Date();
-        $scope.post.$save();
+        savePost();
       };
 
     }],
     link: function(scope, element, attr){
-      tinymce.init({
-        selector: '#wysiwyg-editor',
-        menubar: false,
-        toolbar: 'undo redo | styleselect | bold italic | link image'
-      })
+
     }
   };
 }

@@ -16,6 +16,7 @@ body{font-size: 12px}
   top:0;
   font-size: 1em;
   border-bottom: 1px solid #131f2e;
+  z-index: 9999;
 }
 
 #main-menu nav ul{

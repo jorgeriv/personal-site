@@ -1,3 +1,3 @@
 (function(){'use strict';
-  angular.module('postEditor',[]);
+  angular.module('postEditor',['ngTagsInput']);
 }());

@@ -18,7 +18,13 @@ function postEditor(Post){
         $scope.post.content = tinymce.get('wysiwyg-editor').getContent();
         $scope.post.status = 'draft';
         $scope.post.date = new Date();
-        $scope.post.$save();
+        $scope.post.$save()
+          .then(function(result){
+            $scope.$parent.posts.unshift(result);
+          })
+          .catch(function(err){
+            console.error(err);
+          });
       };
 
       $scope.publish = function publish(){

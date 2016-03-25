@@ -70,8 +70,7 @@
             By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
           </p>
         </header>
-        <div class="post-description">
-          <p>{{post.content}}</p>
+        <div class="post-description" ng-bind-html="post.content">
         </div>
       </section>
       <h1 class="content-subhead">Recent Posts</h1>

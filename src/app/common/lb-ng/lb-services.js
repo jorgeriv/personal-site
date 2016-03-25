@@ -1145,7 +1145,7 @@ module.factory(
   "Post",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/posts/:id",
+      urlBase + "/Posts/:id",
       { 'id': '@id' },
       {
 
@@ -1183,7 +1183,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/posts",
+          url: urlBase + "/Posts",
           method: "POST"
         },
 
@@ -1222,7 +1222,7 @@ module.factory(
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/posts",
+          url: urlBase + "/Posts",
           method: "POST"
         },
 
@@ -1260,7 +1260,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/posts",
+          url: urlBase + "/Posts",
           method: "PUT"
         },
 
@@ -1292,7 +1292,7 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/posts/:id/exists",
+          url: urlBase + "/Posts/:id/exists",
           method: "GET"
         },
 
@@ -1327,7 +1327,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/posts/:id",
+          url: urlBase + "/Posts/:id",
           method: "GET"
         },
 
@@ -1361,7 +1361,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/posts",
+          url: urlBase + "/Posts",
           method: "GET"
         },
 
@@ -1394,7 +1394,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/posts/findOne",
+          url: urlBase + "/Posts/findOne",
           method: "GET"
         },
 
@@ -1428,7 +1428,7 @@ module.factory(
          * The number of instances updated
          */
         "updateAll": {
-          url: urlBase + "/posts/update",
+          url: urlBase + "/Posts/update",
           method: "POST"
         },
 
@@ -1461,7 +1461,7 @@ module.factory(
          * </em>
          */
         "deleteById": {
-          url: urlBase + "/posts/:id",
+          url: urlBase + "/Posts/:id",
           method: "DELETE"
         },
 
@@ -1493,7 +1493,7 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/posts/count",
+          url: urlBase + "/Posts/count",
           method: "GET"
         },
 
@@ -1530,7 +1530,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/posts/:id",
+          url: urlBase + "/Posts/:id",
           method: "PUT"
         },
 
@@ -1567,7 +1567,7 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/posts/change-stream",
+          url: urlBase + "/Posts/change-stream",
           method: "POST"
         },
       }

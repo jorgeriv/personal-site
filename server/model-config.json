@@ -32,8 +32,10 @@
     "dataSource": "db",
     "public": false
   },
-  "post": {
+  "Post": {
     "dataSource": "mongodb",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

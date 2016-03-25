@@ -1,15 +1,12 @@
 {
-  "name": "post",
+  "name": "Post",
   "base": "PersistedModel",
-  "idInjection": true,
+  "strict": false,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "content": {
       "type": "string",
       "required": true
@@ -18,21 +15,26 @@
       "type": "date",
       "required": true
     },
-    "tags": {
-      "type": [
-        "string"
-      ]
-    },
     "language": {
       "type": "string"
     },
     "status": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ],
+      "index": true
+    },
+    "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "index": true
     }
   },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": []
+  "methods": {}
 }

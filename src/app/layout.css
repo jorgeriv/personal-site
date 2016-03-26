@@ -11,6 +11,7 @@ a[ng-click]{
 #wrapper{
   position: absolute;
   min-height: 100%;
+  width: 100%;
   padding-top: 52px;
 }
 /* Main menu */
@@ -92,17 +93,25 @@ h1{
 }
 
 .orange{
-  background-color: rgb(243, 123, 29);
+  background-color:rgb(243, 123, 29);
   color: #fff;
 }
-
+.yellow{
+  background-color: #f4d00c;
+  color: #232f3e;
+}
 .dark-gray{
   background-color: #222;
   color:#eee;
 }
- .content{
-   padding: 1em 2em;
- }
+.content-wrapper{
+
+}
+.content{
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: justify;
+}
 
 /* Blog */
 .sidebar{
@@ -253,7 +262,7 @@ footer{
 }
 
 #hero-menu .pure-menu-link{
-    color: #b3bfce;
+  color: #b3bfce;
 }
 
 #hero-menu .pure-menu-selected{
@@ -262,4 +271,27 @@ footer{
 
 #hero-menu .pure-menu-selected .pure-menu-link{
   color: orange;
+}
+
+/* info-card*/
+.cards {
+}
+.card{
+  background-color: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  color: #999;
+  font-size: 0.7rem;
+}
+.card h3{
+  text-transform: uppercase;
+  margin: 3px 0 1px 0;
+}
+
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
 }

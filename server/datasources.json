@@ -4,7 +4,12 @@
     "connector": "memory"
   },
   "mongodb": {
+    "host": "localhost",
+    "port": 58887,
+    "database": "test",
+    "password": "",
     "name": "mongodb",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "user": ""
   }
 }

@@ -37,7 +37,7 @@ a[ng-click]{
   background-color: inherit;
 }
 
-#main-menu a.current{
+#main-menu ul li.active a{
   background-color: #131f2e;
 }
 

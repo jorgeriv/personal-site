@@ -41,8 +41,9 @@
   <!-- blog-->
 
   <!-- blog topBar -->
-  <script src="app/components/top-bar/topBar.module.js"></script>
-  <script src="app/components/top-bar/topBar.controller.js"></script>
+  <script src="app/components/top-bar/top-bar.module.js"></script>
+  <script src="app/components/top-bar/top-bar.controller.js"></script>
+  <script src="app/components/top-bar/top-bar.nav-active.directive.js"></script>
   <!-- blog-->
 </head>
 <body ng-app="personal-site">
@@ -60,8 +61,8 @@
         </form>
       </div>
        <span class="pure-menu-heading">Jorge Rivera</span>
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link current">Home</a></li>
+      <ul class="pure-menu-list" active-link>
+        <li class="pure-menu-item"><a href="#/home" class="pure-menu-link">Home</a></li>
         <li class="pure-menu-item"><a href="#/resume" class="pure-menu-link">Resume</a></li>
         <li class="pure-menu-item"><a href="#/blog" class="pure-menu-link">Blog</a></li>
         <li class="pure-menu-item"><a href="#/proyects" class="pure-menu-link">Proyects</a></li>

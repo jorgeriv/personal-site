@@ -5,7 +5,7 @@
   },
   "mongodb": {
     "host": "localhost",
-    "port": 58887,
+    "port": 27017,
     "database": "test",
     "password": "",
     "name": "mongodb",

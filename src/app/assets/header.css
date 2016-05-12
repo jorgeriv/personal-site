@@ -1,0 +1,11 @@
+#loginFrm{
+  display: inline-block;
+}
+
+#loginFrm fieldset{
+  padding: 5px 0 1px 0;
+}
+
+#loginFrm input, #loginFrm button{
+  padding: .1em .3em;
+}

@@ -1,0 +1,51 @@
+/* Blog */
+.sidebar{
+  position:fixed;
+  top:34px;
+  bottom: 0;
+}
+#main-blog-container{
+  margin-left: 25%;
+}
+
+.posts h1{
+  text-transform: uppercase;
+  color: #c0c0c0;
+  font-size: 0.8em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c0c0c0;
+  margin: 40px 0 25px 0;
+}
+
+.post-title{
+  font-size: 1.5em;
+}
+.post-meta{
+  color: gray;
+  font-style: italic;
+}
+
+.post-category{
+  display: inline-block;
+  padding:4px 6px;
+  background: gray;
+  font-size: 0.7em;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.tag{
+  display: inline-block;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+  background-color: #ebe378;
+  padding: 3px 4px;
+  margin: 2px 0;
+  border-left: 5px solid #8b8300;
+  border-radius: 2px;
+}
+.tag:hover{
+  text-decoration: underline;
+}

@@ -2,7 +2,7 @@ html,body{
   height: 100%;
 }
 
-body{font-size: 12px}
+body{font-size: 16px}
 
 a[ng-click]{
   cursor: pointer;
@@ -13,18 +13,20 @@ a[ng-click]{
   transform-origin: left top 0;
   float: left;
 }
+
 #wrapper{
   position: absolute;
   min-height: 100%;
   width: 100%;
   padding-top: 52px;
 }
+
 /* Main menu */
 #main-menu{
   background: #232f3e;
   position:fixed;
   top:0;
-  font-size: 1em;
+  font-size: 0.75em;
   border-bottom: 1px solid #131f2e;
   z-index: 9999;
 }
@@ -54,9 +56,11 @@ a[ng-click]{
   padding: 0 2em;
 }
 
+/*
 h1{
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+*/
 /* Tabs */
 .tabs li{
   border: 1px solid #aaa;
@@ -109,13 +113,22 @@ h1{
   background-color: #222;
   color:#eee;
 }
+
+/* Content */
 .content-wrapper{
 
 }
 .content{
-  max-width: 1024px;
+  max-width: 1000px;
+  padding: 1.5em 1em;
   margin: 0 auto;
   text-align: justify;
+}
+
+.content h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
 }
 
 /* Blog */
@@ -248,20 +261,20 @@ footer{
 }
 
 #hero h1{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: lighter;
   text-shadow: 4px 3px 0px #232f3e, 9px 8px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
 #hero h2{
-  font-size: 2.2em;
+  font-size: 1.8em;
   font-weight: lighter;
   text-align:  center;
 }
 
 #hero-menu{
-  font-size: 1.6em;
+  font-size: 1.3em;
   text-align: center;
   background-color: #131f2e; /*#414c5f;*/
 }

@@ -18,7 +18,7 @@ a[ng-click]{
   position: absolute;
   min-height: 100%;
   width: 100%;
-  padding-top: 52px;
+  padding: 52px 0 68px;
 }
 
 /* Main menu */

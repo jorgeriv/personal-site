@@ -38,3 +38,7 @@
 #hero-menu .pure-menu-selected .pure-menu-link{
   color: orange;
 }
+
+#hero-menu a:hover{
+  text-decoration: none;
+}

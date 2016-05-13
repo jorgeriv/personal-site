@@ -7,7 +7,34 @@ body{font-size: 16px}
 a[ng-click]{
   cursor: pointer;
 }
+blockquote{
+  text-align: center;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: "Times New Roman", serif;
+  font-size: 1.1em
+}
 
+blockquote p:before {
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.2em;
+}
+blockquote p:after {
+  content: close-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.2em;
+}
+
+blockquote p{
+  display: inline;
+}
+cite{
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
 .vertical-text{
   transform: rotate(-90deg);
   transform-origin: left top 0;
@@ -18,7 +45,7 @@ a[ng-click]{
   position: absolute;
   min-height: 100%;
   width: 100%;
-  padding: 52px 0 68px;
+  padding: 52px 0 67px;
 }
 
 /* Main menu */
@@ -58,13 +85,10 @@ a[ng-click]{
 
 /*
 h1{
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 */
 
-.content-wrapper{
-
-}
 .content{
   max-width: 1000px;
   padding: 1.5em 1em;
@@ -76,6 +100,35 @@ h1{
   text-transform: uppercase;
   text-align: center;
   font-size: 2em;
+}
+.blue{
+  background-color: #0095dd;
+  color: white;
+}
+
+.purple{
+  background-color: rgb(128, 88, 165);
+}
+
+.green{
+  background-color: #5eb95e;
+}
+
+.red{
+  background-color: #dd514c;
+}
+
+.orange{
+  background-color:rgb(243, 123, 29);
+  color: #fff;
+}
+.yellow{
+  background-color: #f4d00c;
+  color: #232f3e;
+}
+.dark-gray{
+  background-color: #222;
+  color:#eee;
 }
 
 footer{

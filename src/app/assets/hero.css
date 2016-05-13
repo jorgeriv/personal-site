@@ -8,16 +8,17 @@
 }
 
 #hero h1{
-  font-size: 4em;
-  font-weight: lighter;
+  font-size: 3.5em;
+  font-weight: bold;
   text-shadow: 4px 3px 0px #232f3e, 9px 8px 0px rgba(0, 0, 0, 0.15);
-  text-align: center;
+  text-transform: capitalize;;
 }
 
 #hero h2{
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-weight: lighter;
   text-align:  center;
+  font-family: 'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
 }
 
 #hero-menu{

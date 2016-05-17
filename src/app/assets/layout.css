@@ -16,6 +16,11 @@ a[ng-click]{
   cursor: pointer;
 }
 
+article{
+  padding: 1.5em 1em;
+  text-align: justify;
+}
+
 blockquote{
   text-align: center;
   quotes: "\201C""\201D""\2018""\2019";
@@ -52,7 +57,6 @@ cite a{
 .vertical-text{
   transform: rotate(-90deg);
   transform-origin: left top 0;
-  float: left;
 }
 
 #wrapper{
@@ -106,9 +110,7 @@ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .content{
   max-width: 1000px;
-  padding: 1.5em 1em;
   margin: 0 auto;
-  text-align: justify;
 }
 
 .content h1{

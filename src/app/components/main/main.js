@@ -7,6 +7,7 @@
     'blog',
     'resume',
     'home',
-    'topBar'
+    'topBar',
+    'progress-bar'
   ]);
 }());

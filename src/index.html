@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <base href="/">
   <title>Jorge's awesome personal website</title>
-  <link rel="stylesheet" href="assets/pure/pure-min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="lib/pure/pure-min.css" media="screen" title="no title" charset="utf-8">
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="assets/pure/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="lib/pure/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="assets/pure/grids-responsive-min.css">
+  <link rel="stylesheet" href="lib/pure/grids-responsive-min.css">
   <!--<![endif]-->
-  <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="app/layout.css">
-  <script src="assets/angular/angular.min.js"></script>
-  <script src="assets/angular-route/angular-route.min.js"></script>
-  <script src="assets/tinymce/tinymce.min.js"></script>
-  <script src="assets/angular-resource/angular-resource.min.js"></script>
-  <script src="assets/angular-sanitize/angular-sanitize.min.js"></script>
-  <script src="assets/ng-tags-input/ng-tags-input.min.js"></script>
+  <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="app/assets/layout.css">
+  <link rel="stylesheet" href="app/assets/blog.css">
+  <link rel="stylesheet" href="app/assets/header.css">
+  <link rel="stylesheet" href="app/assets/ui-widgets/cards.css">
+  <link rel="stylesheet" href="app/assets/ui-widgets/loader.css">
+  <link rel="stylesheet" href="app/assets/ui-widgets/progress-bar.css">
+  <link rel="stylesheet" href="app/assets/ui-widgets/tabs.css">
+  <link rel="stylesheet" href="app/assets/hero.css">
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-route/angular-route.min.js"></script>
+  <script src="lib/tinymce/tinymce.min.js"></script>
+  <script src="lib/angular-resource/angular-resource.min.js"></script>
+  <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="lib/ng-tags-input/ng-tags-input.min.js"></script>
   <script src="app/common/lb-ng/lb-services.js"></script>
   <script src="app/components/main/main.js"></script>
   <script src="app/components/main/main.controller.js"></script>
@@ -49,6 +56,7 @@
 <body ng-app="personal-site">
   <div id="wrapper" ng-controller="mainController">
     <nav id="main-menu" class="pure-menu pure-menu-horizontal" ng-controller="topBarController">
+      <!--
       <div class="right">
         <a href="#" ng-click="doShowFrm()" ng-if="!loggedIn || showFrm"><i class="fa fa-sign-in"></i> Log In</a>
         <a href="#" ng-click="logOut()" ng-if="loggedIn"><i class="fa fa-sign-out"></i> Log Out</a>
@@ -60,13 +68,16 @@
           </fieldset>
         </form>
       </div>
+    -->
        <span class="pure-menu-heading">Jorge Rivera</span>
       <ul class="pure-menu-list" active-link>
         <li class="pure-menu-item"><a href="#/home" class="pure-menu-link">Home</a></li>
+        <!--
         <li class="pure-menu-item"><a href="#/resume" class="pure-menu-link">Resume</a></li>
         <li class="pure-menu-item"><a href="#/blog" class="pure-menu-link">Blog</a></li>
         <li class="pure-menu-item"><a href="#/proyects" class="pure-menu-link">Proyects</a></li>
         <li class="pure-menu-item"><a href="#/other" class="pure-menu-link">Other</a></li>
+      -->
       </ul>
     </nav>
     <ng-view></ng-view>

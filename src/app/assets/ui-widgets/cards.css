@@ -1,0 +1,29 @@
+/* info-card*/
+.cards {
+}
+.card{
+  background-color: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #999;
+  font-size: 0.7rem;
+}
+.card h3{
+  text-transform: uppercase;
+  margin: 4px 0 18px 0;
+}
+
+.card-icon{
+  text-align: center;
+}
+.card-icon a{
+  color: gray;
+}
+.card-icon a:hover{
+  color: orange;
+}
+.card-icon i{
+  font-size: 10em;
+}

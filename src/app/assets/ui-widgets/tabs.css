@@ -1,0 +1,23 @@
+/* Tabs */
+.tabs li{
+  border: 1px solid #aaa;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /*background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);*/
+  text-shadow: 0 1px #FFF;
+  margin: 0 -5px;
+  padding: 0 20px;
+}
+.tabs li.active{
+  background:#fff;
+  z-index:2;
+  border-bottom-color: #FFF;
+}
+
+.tabs li a{
+  padding: 0.3em 0.5em;
+}
+.tabs li a:hover{
+  background-color: inherit;
+  text-decoration: none;
+}

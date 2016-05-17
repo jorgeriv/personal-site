@@ -1,0 +1,30 @@
+.progress-bar{
+  position: relative;
+  height: 26px;
+  vertical-align: middle;
+}
+
+.progress-bar .label{
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #52575c;
+}
+
+.progress-bar .bar{
+  background: #eaeaea;
+  border: 1px solid #d4d6d9;
+  height: 6px;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.progress-bar .bar .progress{
+  background: #70afdf;
+  height: 6px;
+  position: relative;
+  top: -1px;
+  left: -1px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}

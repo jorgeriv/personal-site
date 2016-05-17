@@ -1,0 +1,44 @@
+/* Hero unit */
+
+#hero{
+  background: #232f3e;
+  color: white;
+  min-height: 50vh;
+  border-top: 1px solid #333f4e;
+}
+
+#hero h1{
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 4px 3px 0px #232f3e, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  text-transform: capitalize;;
+}
+
+#hero h2{
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-align:  center;
+  font-family: 'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
+}
+
+#hero-menu{
+  font-size: 1.3em;
+  text-align: center;
+  background-color: #131f2e; /*#414c5f;*/
+}
+
+#hero-menu .pure-menu-link{
+  color: #b3bfce;
+}
+
+#hero-menu .pure-menu-selected{
+  border-bottom: 3px solid orange;
+}
+
+#hero-menu .pure-menu-selected .pure-menu-link{
+  color: orange;
+}
+
+#hero-menu a:hover{
+  text-decoration: none;
+}

@@ -8,6 +8,7 @@
     'resume',
     'home',
     'topBar',
-    'progress-bar'
+    'progress-bar',
+    'quotes'
   ]);
 }());

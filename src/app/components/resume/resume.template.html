@@ -76,118 +76,30 @@
       </div>
     </div>
   </article>
-
+<section class="blue">
   <article class="content">
     <h1>Employment</h1>
     <div class="pure-g">
-      <div class="pure-u-1">
+      <div class="pure-u-1" ng-repeat="job in employmentHistory">
         <div class="pure-g">
           <div class="pure-u-1-4">
-            <h3>Blue Trail Software</h3>
-            <h5>March 2015 - January 2016</h5>
+            <h3>{{job.company}}</h3>
+            <h5>{{job.from}} - {{job.to}}</h5>
           </div>
           <div class="pure-u-3-4">
-            <h4>Senior Front-end Engineer</h4>
+            <h4>{{job.jobTitle}}</h4>
             <p>
-              I worked as a consultant for Metrodigi in the new version of their CHAUCER &reg; cloud-based authoring platform, after that I Joined the team developping BUMP a social network tool designed for companies distributed in large geographic areas, finally I moved shortly to Dentek website to help in the process to secure the site in order to get certified to process payments thru their website. During this time I was also part of the company effort on continous lerning, I imparted a course on NodeJS to the interns.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="pure-u-1">
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <h3>Entrepreneur</h3>
-            <h5>August 2013-March 2015</h5>
-          </div>
-          <div class="pure-u-3-4">
-            <h4>Manager</h4>
-            <p>
-              After   resigning   of   my   position   in   Softtek   I   came   back   to   Mexico   to   start   my   own   business   non
-              IT   related,   but   still   actively   developing   apps   like   a   twitter   bot   https://twitter.com/knowit1st,
-              A3.js   http://jorgeriv.github.io/A3/,   an   angular.js   app   for   sports   forecasting,   statistics   and   data
-              analysis among other projects.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="pure-u-1">
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <h3>Softtek Integration Systems Inc.</h3>
-            <h5>September 2012 - August 2013</h5>
-          </div>
-          <div class="pure-u-3-4">
-            <h4>Senior Front-end Engineer</h4>
-            <p>
-              Consultant   for   GE   corporate   onsite   (US),   in   this   position   I   was   responsible   to   attend   meetings
-              with   the   clients,   participate   in   the   decision   taking   process   and   pass   down   the   information   to
-              the team in Mexico as well as coding the application.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="pure-u-1">
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <h3>Softtek Servicios Corporativos S.A. de C.V.</h3>
-            <h5>April 2011-September 2012</h5>
-          </div>
-          <div class="pure-u-3-4">
-            <h4>Front-end Engineer</h4>
-            <p>
-              Consultant   for   GE   corporate,   I   was   part   of   the   development   team   in   charge   of   ‘site   builder’
-              and   ‘page   editor’   web   apps.   This   position   required   heavy   use   of   JavaScript   and   jQuery   as   well
-              as   HTML   and   CSS.   Later   I   was   chosen   as   part   of   the   team   to   develop   the   new   GE   corporate
-              website ‘colab’ an internal social network for GE’s employees.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="pure-u-1">
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <h3>Palmera Systems</h3>
-            <h5>October 2010- April 2011</h5>
-          </div>
-          <div class="pure-u-3-4">
-            <h4>FullStack Web Developper</h4>
-            <p>
-              Web   developer   for   Palmera   System   a   start­up   company   that   offered   web   based   solutions   for
-              local   and   international   customers.   My   main   activities   consisted   in   translate   client’s
-              requirements   to   fully   functional   websites   and   CMS   templates,   set   up   web   servers,   convert
-              mockups   to   html+css   webpages   and   write   php   scripts   to   connect   to   databases   as   well   as   it’s
-              front end counterparts to render the data via AJAX.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="pure-u-1">
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <h3>Freelancer</h3>
-            <h5>August 2008 - October 2010</h5>
-          </div>
-          <div class="pure-u-3-4">
-            <h4>FullStack Web Developper</h4>
-            <p>
-              After   obtaining   my   engineering   degree   I   worked   mostly   self­employed   building   websites   for
-              local   business   where   I   was   a   full   stack   developer   in   charge   of   both   backend   and   frontend   and
-              in   some   cases   content   management.   During   this   time   I   also   co­authored   a   blog   about
-              technology   news   and   gadgets   and   later   I   built   a   website   about   tourism   and   social   life   in
-              Manzanillo,   Colima,   Mexico.   Through   this   activities   I   had   the   opportunity   to   gain   experience   in
-              technologies   such   as   PHP,   MySQL,   HTML,   JavaScript,   jQuery,   CSS2   and   CMS   as   well   as
-              understand clients requirements and elaborate time and cost estimations of projects.
+              {{job.abstract}}
             </p>
           </div>
         </div>
       </div>
     </div>
   </article>
-
-  <div class="content">
+</section>
+  <article class="content">
     <h1>Education</h1>
     <h3>Universidad De Colima</h3>
     <p>Electronic And Communication Engineering</p>
-  </div>
+  </article>
 </section>

@@ -3,11 +3,17 @@
   background-size: cover;
   height: 300px;
 }
-.cover .profile{
-  position:relative;
-  top:175px;
-  left:140px;
+.profile-container{
+  /* background-color: rgba(255, 50, 200, 0.8); */
+}
+.profile-container img{
+  position:absolute;
+  top: 252px;
+  left: 15%;
   width: 200px;
   border: 8px solid #ececec;
   border-radius: 50%;
+}
+.profile-container nav{
+  text-align: center;
 }

@@ -1,0 +1,13 @@
+.cover{
+  background: url(cover.jpg) center center no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.cover .profile{
+  position:relative;
+  top:175px;
+  left:140px;
+  width: 200px;
+  border: 8px solid white;
+  border-radius: 50%;
+}

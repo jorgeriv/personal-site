@@ -25,7 +25,8 @@
         {name: 'SVN'},
         {name: 'REST'},
         {name: 'Gulp'},
-        {name: 'NodeJS'}
+        {name: 'NodeJS'},
+        {name: 'Browser Sync'},
       ];
 
       $scope.programmingLanguages = [

@@ -93,7 +93,7 @@
       <h1>Employment</h1>
       <div class="pure-g">
         <div class="pure-u-1" ng-repeat="job in employmentHistory">
-          <b>{{job.company}}</b> – <i>{{job.jobTitle}}</i>
+          <b>{{job.company}}</b>, <span>{{job.place}}</span> – <i>{{job.jobTitle}}</i>
           <br>
           <small>{{job.from}} - {{job.to}}</small>
           <p>{{job.abstract}}</p>

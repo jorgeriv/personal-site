@@ -43,7 +43,7 @@
           from: new Date('2015-03-01').toDateString(),
           to: new Date('2016-01-30').toDateString(),
           jobTitle: 'Senior Front-end Engineer',
-          abstract: 'I worked as a consultant for Metrodigi in the new version of their CHAUCER ® cloud-based authoring platform, after that I Joined the team developping BUMP a social network tool designed for companies distributed in large geographic areas, finally I moved shortly to Dentek website to help in the process to secure the site in order to get certified to process payments thru their website. During this time I was also part of the company effort on continous lerning, I imparted a course on NodeJS to the interns. ',
+          abstract: 'I did consulting work for Metrodigi in the new version of their CHAUCER ® cloud-based authoring platform, then I joined the team developing BUMP a B2B social network tool designed to improve communication in companies distributed in large geographic areas, finally I moved shortly to work on Dentek™ website helping to get the site certified to process bank payments through their website. I also participated on the company effort on continuous training for the more junior staff.',
           description: '',
           keyWords: [
             'NodeJS',
@@ -66,27 +66,7 @@
           from: Date('2013-07-01'),
           to: Date('2015-03-01'),
           jobTitle: 'Manager',
-          abstract: 'After resigning of my position in Softtek I came back to Mexico to start my own business non IT related, but still actively developing apps like a twitter bot https://twitter.com/knowit1st, A3.js http://jorgeriv.github.io/A3/, an angular.js app for sports forecasting, statistics and data analysis among other projects. ',
-          description: '',
-          keyWords: [
-            'NodeJS',
-            'AngularJS',
-            'ExpressJS',
-            'MongoDB',
-            'JavaScript',
-            'CSS',
-            'HTML',
-            'GIT',
-            'REST',
-            'Gulp',
-          ]
-        },
-        {
-          company: 'Entrepreneur',
-          from: Date('2013-07-01'),
-          to: Date('2015-03-01'),
-          jobTitle: 'Manager',
-          abstract: 'After resigning of my position in Softtek I came back to Mexico to start my own business non IT related, but still actively developing apps like a twitter bot https://twitter.com/knowit1st, A3.js http://jorgeriv.github.io/A3/, an angular.js app for sports forecasting, statistics and data analysis among other projects. ',
+          abstract: 'I started a small business on the fast food industry (pizza place). While not IT related, I kept actively developing during this period, I developed the company’s website, and other personal projects as a twitter bot (@knowIt1st), A3.js a library of angular directives for charts using D3.js among others, but most important I acquired experience managing a team.',
           description: '',
           keyWords: [
             'NodeJS',
@@ -106,7 +86,7 @@
           from: Date('2012-09-01'),
           to: Date('2013-08-01'),
           jobTitle: 'Senior Front-end Engineer',
-          abstract: 'Consultant for GE corporate onsite (US), in this position I was responsible to attend meetings with the clients, participate in the decision taking process and pass down the information to the team in Mexico as well as coding the application. ',
+          abstract: 'As a consultant for GE corporate (Working onsite in the client’s office in Shelton, CT), I worked on one of the GE’s key products at the time, Collab the GE’s internal social network tool. I was responsible to attend meetings with the GE’s Digital Media Technologies team, participate in the decision taking process and pass down the information to the Softtek team in Mexico as well as coding the application.',
           description: '',
           keyWords: [
             'NodeJS',
@@ -126,7 +106,7 @@
           from: Date('2011-04-01'),
           to: Date('2012-09-01'),
           jobTitle: 'Senior Front-end Engineer',
-          abstract: 'Consultant for GE corporate, I was part of the development team in charge of ‘site builder’ and ‘page editor’ web apps. This position required heavy use of JavaScript and jQuery as well as HTML and CSS. Later I was chosen as part of the team to develop the new GE corporate website ‘colab’ an internal social network for GE’s employees. ',
+          abstract: 'I was part of the development team in charge of ‘site builder’ and ‘page editor’ web applications. This position required heavy use of JavaScript and jQuery as well as HTML and CSS. Later I was chosen as part of the team of engineers to develop Colab and shortly after I was relocated to GE’s office, working for the Softtek filial company in the US (See Softtek Integration Systems Inc. description above).',
           description: '',
           keyWords: [
             'JavaScript',
@@ -142,7 +122,7 @@
           from: Date('2010-10-01'),
           to: Date('2011-04-01'),
           jobTitle: 'FullStack Web Developper',
-          abstract: 'Web developer for Palmera System a start­up company that offered web based solutions for local and international customers. My main activities consisted in translate client’s requirements to fully functional websites and CMS templates, set up web servers, convert mockups to html+css webpages and write php scripts to connect to databases as well as it’s front end counterparts to render the data via AJAX.',
+          abstract: 'Web developer for Palmera System a start­up company that offered web based solutions for local and international customers. My main activities consisted in translate client’s requirements to fully functional websites and CMS templates, set up web servers, convert mockups to html+css web pages and write php scripts to connect to databases as well as its frontend counterparts to render data via AJAX.',
           description: '',
           keyWords: [
             'JavaScript',
@@ -160,7 +140,7 @@
           from: Date('2008-08-01'),
           to: Date('2010-10-01'),
           jobTitle: 'FullStack Web Developper',
-          abstract: 'After obtaining my engineering degree I worked mostly self­employed building websites for local business where I was a full stack developer in charge of both backend and frontend and in some cases content management. During this time I also co­authored a blog about technology news and gadgets and later I built a website about tourism and social life in Manzanillo, Colima, Mexico. Through this activities I had the opportunity to gain experience in technologies such as PHP, MySQL, HTML, JavaScript, jQuery, CSS2 and CMS as well as understand clients requirements and elaborate time and cost estimations of projects.',
+          abstract: 'Worked mostly self employed, building websites for local business where I was in charge of both backend and frontend and in some cases content management. During this time I also co­authored a blog about technology news and gadgets. Later I built a website about tourism and social life in Manzanillo, Colima, Mexico. Through this activities I gained experience in technologies such as PHP, MySQL, HTML, JavaScript, jQuery, CSS2 and CMS as well as understanding clients requirements to elaborate time and cost estimations of projects.',
           description: '',
           keyWords: [
             'JavaScript',

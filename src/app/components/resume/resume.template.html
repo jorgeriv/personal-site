@@ -19,16 +19,16 @@
   <article class="pure-u-1">
     <h1>Personal Statment</h1>
     <p>
-      As a Front-end engineer and JavaScript expert with over 7 years experience coding solutions for small to large companies, I love to craft functional and beautiful web applications and websites.
+      JavaScript expert with over 7 years experience coding solutions for small to large companies, I love to craft functional and beautiful web applications and websites. I’m also an open source enthusiast and technology geek.
     </p>
     <p>
-      During my career as a developper I have contributed to many web projects, I have also developed some libraries as rainbow.js and plotter.js which I share as open source projects on GitHub.
+      During my career I have developed multiple skills on frontend and backend development, agile methodologies, source version control, object oriented design and even a bit of graphical design. I develop mostly using open source tools on both Windows and GNU/Linux systems (more in the later than the former).
     </p>
     <p>
-      Looking to become a reference in front-end development in general but particulary JavaScript expert, work in a company where I can contribute and develop products that solve needs for people, also I want to make an impact in the world bla bla bla.
+      I’m currently looking to become a reference in front-end development related technologies in general but especially on JavaScript, to work in a company where I can contribute to develop innovative solutions using edge technologies where I can share my knowledge but also learn from experienced team members.
     </p>
   </article>
-  <article class="pure-u-1 pure-u-md-1-2">
+  <article class="pure-u-1">
 
     <h2>Productivity</h2>
     <p>
@@ -41,7 +41,7 @@
       to bettery quality tools that let me and my team deliver faster and better. Code completition, text espanding tools, macros and alike tools are part of my personal toolset for productivity.
     </p>
   </article>
-  <article class="pure-u-1 pure-u-md-1-2">
+  <article class="pure-u-1">
     <h2>Team Work</h2>
     <p>
       Have you ever hear of high performance teams? I have and ever since I've been researching about it and I'm convinced that a well glued group of people motivated enough is capable to acheive incredible things.
@@ -93,18 +93,10 @@
       <h1>Employment</h1>
       <div class="pure-g">
         <div class="pure-u-1" ng-repeat="job in employmentHistory">
-          <div class="pure-g">
-            <div class="pure-u-1-4">
-              <h3>{{job.company}}</h3>
-              <h5>{{job.from}} - {{job.to}}</h5>
-            </div>
-            <div class="pure-u-3-4">
-              <h4>{{job.jobTitle}}</h4>
-              <p>
-                {{job.abstract}}
-              </p>
-            </div>
-          </div>
+          <b>{{job.company}}</b> – <i>{{job.jobTitle}}</i>
+          <br>
+          <small>{{job.from}} - {{job.to}}</small>
+          <p>{{job.abstract}}</p>
         </div>
       </div>
     </article>
@@ -112,6 +104,6 @@
   <article class="content">
     <h1>Education</h1>
     <h3>Universidad De Colima</h3>
-    <p>Electronic And Communication Engineering</p>
+    <p>Communication and Electronics Engineering</p>
   </article>
 </section>

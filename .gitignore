@@ -20,3 +20,4 @@ npm-debug.log
 lib
 security-credentials
 dist
+src/assets

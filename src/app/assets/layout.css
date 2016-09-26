@@ -170,7 +170,12 @@ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .white{
   background-color: white;
-  color:#373737;
+  color:#222;
+}
+
+.black{
+  background-color: #252525;
+  color:#eee;
 }
 
 footer{
@@ -189,4 +194,20 @@ footer{
 .img-responsive{
   max-width: 100%;
   height: auto;
+}
+
+.box{
+  padding:40px;
+  margin-bottom: 40px;
+}
+.box-right{
+  margin-left: 20px;
+}
+.box-center{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box-left{
+  margin-right: 20px;
 }

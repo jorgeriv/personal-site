@@ -36,6 +36,10 @@
   float: right;
 }
 
+.card-no-border{
+  border:none;
+}
+
 .card-white{
   background-color: white;
   border-color: #373737;

@@ -5,71 +5,71 @@
     "status": "available",
     "for": "Full-time position, partial time position, freelancer jobs"
   },
-  "personal-information": {
-    "date-of-birth": "1984-11-22"
+  "personalInformation": {
+    "dateOfBirth": "1984-11-22"
   },
-  "employment-history": [
+  "employmentHistory": [
     {
       "job": {
-        "company-name": "Freelancer",
+        "companyName": "Freelancer",
         "position": "FullStack Web Developper",
-        "brief-description": "After obtaining my engineering degree I worked mostly self­employed building websites for local business where I was a full stack developer in charge of both backend and frontend and in some cases content management. During this time I also co­authored a blog about technology news and gadgets and later I built a website about tourism and social life in Manzanillo, Colima, Mexico. Through this activities I had the opportunity to gain experience in technologies such as PHP, MySQL, HTML, JavaScript, jQuery, CSS2 and CMS as well as understand clients requirements and elaborate time and cost estimations of projects. ",
-        "start-date": "2008-08-01",
-        "end-date": "2010-10-01"
+        "briefDescription": "After obtaining my engineering degree I worked mostly self­employed building websites for local business where I was a full stack developer in charge of both backend and frontend and in some cases content management. During this time I also co­authored a blog about technology news and gadgets and later I built a website about tourism and social life in Manzanillo, Colima, Mexico. Through this activities I had the opportunity to gain experience in technologies such as PHP, MySQL, HTML, JavaScript, jQuery, CSS2 and CMS as well as understand clients requirements and elaborate time and cost estimations of projects. ",
+        "startDate": "2008-08-01",
+        "endDate": "2010-10-01"
       }
     },
     {
       "job": {
-        "company-name": "Palmera Systems",
+        "companyName": "Palmera Systems",
         "position": "FullStack Web Developper",
-        "brief-description": "Web developer for Palmera System a start­up company that offered web based solutions for local and international customers. My main activities consisted in translate client’s requirements to fully functional websites and CMS templates, set up web servers, convert mockups to html+css webpages and write php scripts to connect to databases as well as it’s front end counterparts to render the data via AJAX.",
-        "start-date": "2010-10-02",
-        "end-date": "2011-04-01"
+        "briefDescription": "Web developer for Palmera System a start­up company that offered web based solutions for local and international customers. My main activities consisted in translate client’s requirements to fully functional websites and CMS templates, set up web servers, convert mockups to html+css webpages and write php scripts to connect to databases as well as it’s front end counterparts to render the data via AJAX.",
+        "startDate": "2010-10-02",
+        "endDate": "2011-04-01"
       }
     },
     {
       "job": {
-        "company-name": "Softtek Servicios Corporativos S.A. de C.V.",
+        "companyName": "Softtek Servicios Corporativos S.A. de C.V.",
         "position": "Front-end Engineer",
-        "brief-description": "Consultant for GE corporate, I was part of the development team in charge of ‘site builder’ and ‘page editor’ web apps. This position required heavy use of JavaScript and jQuery as well as HTML and CSS. Later I was chosen as part of the team to develop the new GE corporate website ‘colab’ an internal social network for GE’s employees. ",
-        "start-date": "2011-04-02",
-        "end-date": "2012-09-01"
+        "briefDescription": "Consultant for GE corporate, I was part of the development team in charge of ‘site builder’ and ‘page editor’ web apps. This position required heavy use of JavaScript and jQuery as well as HTML and CSS. Later I was chosen as part of the team to develop the new GE corporate website ‘colab’ an internal social network for GE’s employees. ",
+        "startDate": "2011-04-02",
+        "endDate": "2012-09-01"
       }
     },
     {
       "job": {
-        "company-name": "Softtek Integration Systems Inc.",
+        "companyName": "Softtek Integration Systems Inc.",
         "position": "Senior Front-end Engineer",
-        "brief-description": "Consultant for GE corporate onsite (US), in this position I was responsible to attend meetings with the clients, participate in the decision taking process and pass down the information to the team in Mexico as well as coding the application. ",
-        "start-date": "2012-09-02",
-        "end-date": "2013-08-01"
+        "briefDescription": "Consultant for GE corporate onsite (US), in this position I was responsible to attend meetings with the clients, participate in the decision taking process and pass down the information to the team in Mexico as well as coding the application. ",
+        "startDate": "2012-09-02",
+        "endDate": "2013-08-01"
       }
     },
     {
       "job": {
-        "company-name": "Entrepreneur",
+        "companyName": "Entrepreneur",
         "position": "Manager",
-        "brief-description": "After resigning of my position in Softtek I came back to Mexico to start my own business non IT related, but still actively developing apps like a twitter bot https://twitter.com/knowit1st, A3.js http://jorgeriv.github.io/A3/, an angular.js app for sports forecasting, statistics and data analysis among other projects.",
-        "start-date": "2013-08-02",
-        "end-date": "2015-"
+        "briefDescription": "After resigning of my position in Softtek I came back to Mexico to start my own business non IT related, but still actively developing apps like a twitter bot https://twitter.com/knowit1st, A3.js http://jorgeriv.github.io/A3/, an angular.js app for sports forecasting, statistics and data analysis among other projects.",
+        "startDate": "2013-08-02",
+        "endDate": "2015-"
       }
     },
     {
       "job": {
-        "company-name": "Blue Trail Software",
+        "companyName": "Blue Trail Software",
         "position": "Senior Front-end Engineer",
-        "brief-description": "",
-        "start-date": "2015-08-02",
-        "end-date": "2016-02-01"
+        "briefDescription": "",
+        "startDate": "2015-08-02",
+        "endDate": "2016-02-01"
       }
     },
     {
       "job": {
-        "company-name": "Freelancer",
+        "companyName": "Freelancer",
         "position": "Freelancer",
-        "brief-description": "",
-        "start-date": "2016-02-02",
-        "end-date": ""
+        "briefDescription": "",
+        "startDate": "2016-02-02",
+        "endDate": ""
       }
     }
   ],
@@ -77,82 +77,209 @@
     "languages": [
       {
         "name": "Spanish",
-        "proficency-level": "Native Speaker",
-        "proficency-score": 100
+        "proficencyLevel": "Native Speaker",
+        "proficencyScore": 100
       },
       {
         "name": "English",
-        "proficency-level": "Professional proficency",
-        "proficency-score": 80
+        "proficencyLevel": "Professional proficency",
+        "proficencyScore": 80
       },
       {
         "name": "German",
-        "proficency-level": "Studying",
-        "proficency-score": 10
+        "proficencyLevel": "Studying",
+        "proficencyScore": 5
       }
     ],
-    "programming-languages": [
+    "programmingLanguages": [
       {
-        "name": "JavaScript",
-        "proficency-level": "expert",
-        "proficency-score": 90
+        "name": "JavaScript (ES2015)",
+        "proficencyLevel": "expert",
+        "proficencyScore": 95
+      },
+      {
+        "name": "TypeScript",
+        "proficencyLevel": "expert",
+        "proficencyScore": 90
       },
       {
         "name": "HTML5",
-        "proficency-level": "expert",
-        "proficency-score": 90
+        "proficencyLevel": "expert",
+        "proficencyScore": 90
       },
       {
         "name": "CSS3",
-        "proficency-level": "expert",
-        "proficency-score": 90
+        "proficencyLevel": "expert",
+        "proficencyScore": 90
+      },
+      {
+        "name": "C/C++",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 20
+      },
+      {
+        "name": "PHP",
+        "proficencyLevel": "Toyed with the language",
+        "proficencyScore": 15
       },
       {
         "name": "Python",
-        "proficency-level": "beginner",
-        "proficency-score": 35
+        "proficencyLevel": "beginner",
+        "proficencyScore": 35
+      },
+      {
+        "name": "SVG",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 22
       }
     ],
     "libraries": [
       {
         "name": "jQuery",
-        "proficency-level": "expert",
-        "proficency-score": 85
+        "proficencyLevel": "proficient",
+        "proficencyScore": 85
+      },
+      {
+        "name": "Mongoose",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 72
+      },
+      {
+        "name": "Angular2",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 74
+      },
+      {
+        "name": "LoopBack",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 43
       },
       {
         "name": "Express.js",
-        "proficency-level": "intermediate",
-        "proficency-score": 60
+        "proficencyLevel": "intermediate",
+        "proficencyScore": 61
       },
       {
         "name": "Angular.js",
-        "proficency-level": "expert",
-        "proficency-score": 90
+        "proficencyLevel": "proficient",
+        "proficencyScore": 73
       },
       {
         "name": "Backbone.js",
-        "proficency-level": "intermediate",
-        "proficency-score": 70
+        "proficencyLevel": "proficient",
+        "proficencyScore": 70
       },
       {
         "name": "Bootstrap",
-        "proficency-level": "intermediate",
-        "proficency-score": 42
+        "proficencyLevel": "proficient",
+        "proficencyScore": 84
+      },
+      {
+        "name": "D3.js",
+        "proficencyLevel": "I have toyed with this",
+        "proficencyScore": 12
       },
       {
         "name": "Purecss",
-        "proficency-level": "expert",
-        "proficency-score": 100
+        "proficencyLevel": "proficient",
+        "proficencyScore": 89
       },
       {
         "name": "Sass",
-        "proficency-level": "intermediate",
-        "proficency-score": 51
+        "proficencyLevel": "intermediate",
+        "proficencyScore": 51
       },
       {
         "name": "Require.js",
-        "proficency-level": "intermediate",
-        "proficency-score": 70
+        "proficencyLevel": "proficient",
+        "proficencyScore": 76
+      }
+    ],
+    "tools": [
+      {
+        "name": "GIT",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 80
+      },
+      {
+        "name": "AWS",
+        "proficencyLevel": "Intermediate",
+        "proficencyScore": 50
+      },
+      {
+        "name": "Angular CLI",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 85
+      },
+      {
+        "name": "JSLint/JSHint",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 85
+      },
+      {
+        "name": "emmet",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 88
+      },
+      {
+        "name": "SVN",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 80
+      },
+      {
+        "name": "REST",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 83
+      },
+      {
+        "name": "BABEL",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 83
+      },
+      {
+        "name": "Gulp",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 83
+      },
+      {
+        "name": "NodeJS",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 80
+      },
+      {
+        "name": "Browser Sync",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 79
+      },
+      {
+        "name": "Jasmine",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 55
+      },
+      {
+        "name": "Yeoman",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 52
+      },
+      {
+        "name": "NPM",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 85
+      },
+      {
+        "name": "Bower",
+        "proficencyLevel": "proficient",
+        "proficencyScore": 84
+      },
+      {
+        "name": "Browserify",
+        "proficencyLevel": "intermediate",
+        "proficencyScore": 67
+      },
+      {
+        "name": "Grunt",
+        "proficencyLevel": "beginner",
+        "proficencyScore": 23
       }
     ]
   }

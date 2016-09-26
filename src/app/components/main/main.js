@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('personal-site', [
+  let myApp = angular.module('personal-site', [
     'ngRoute',
     'ngSanitize',
     'lbServices',

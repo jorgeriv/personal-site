@@ -6,7 +6,7 @@
     "for": "Full-time position, partial time position, freelancer jobs"
   },
   "personal-information": {
-    "date-of-birth": "1984-11-22",
+    "date-of-birth": "1984-11-22"
   },
   "employment-history": [
     {
@@ -71,9 +71,26 @@
         "start-date": "2016-02-02",
         "end-date": ""
       }
-    },
+    }
   ],
   "skills": {
+    "languages": [
+      {
+        "name": "Spanish",
+        "proficency-level": "Native Speaker",
+        "proficency-score": 100
+      },
+      {
+        "name": "English",
+        "proficency-level": "Professional proficency",
+        "proficency-score": 80
+      },
+      {
+        "name": "German",
+        "proficency-level": "Studying",
+        "proficency-score": 10
+      }
+    ],
     "programming-languages": [
       {
         "name": "JavaScript",
@@ -138,5 +155,5 @@
         "proficency-score": 70
       }
     ]
-  },
+  }
 }

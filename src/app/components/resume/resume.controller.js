@@ -1,13 +1,20 @@
 (function(){ 'use strict';
   angular.module('resume')
-    .controller('resumeController',['$scope', resumeController]);
-    function resumeController($scope){
+    .controller('resumeController',['$scope', '$http',resumeController]);
+    function resumeController($scope, $http){
       // function Skill(name, proficency, level){
       //   this.name = name;
       //   this.proficency = proficency;
       //   this.level = level;
       //   this.description = '';
       // }
+
+      $http.get('app/common/data/resume.json')
+        .then(response =>{
+          $scope.resume = response.data;
+        }).catch((err)=>{
+          console.log(err);
+        });
 
       $scope.librariesAndFrameworks = [
         {name: 'jQuery'},

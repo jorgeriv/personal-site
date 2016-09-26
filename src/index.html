@@ -66,37 +66,37 @@
   <!-- quotes -->
 
 </head>
-<body ng-app="personal-site">
+<body id="body" ng-app="personal-site">
   <div id="wrapper" ng-controller="mainController">
     <nav id="main-menu" class="pure-menu pure-menu-horizontal" ng-controller="topBarController">
       <!--
       <div class="right">
-        <a href="#" ng-click="doShowFrm()" ng-if="!loggedIn || showFrm"><i class="fa fa-sign-in"></i> Log In</a>
-        <a href="#" ng-click="logOut()" ng-if="loggedIn"><i class="fa fa-sign-out"></i> Log Out</a>
-        <form id="loginFrm" class="pure-form" ng-if="showFrm" ng-submit="logIn()">
-          <fieldset>
-            <input type="email" placeholder="Email" ng-model="loginFrm.email">
-            <input type="password" placeholder="Password" ng-model="loginFrm.password">
-            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
-          </fieldset>
-        </form>
-      </div>
-    -->
-       <span class="pure-menu-heading">Jorge Rivera</span>
-      <ul class="pure-menu-list" active-link>
-        <li class="pure-menu-item"><a href="#/home" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item"><a href="#/resume" class="pure-menu-link">Resume</a></li>
-    <!--
-        <li class="pure-menu-item"><a href="#/blog" class="pure-menu-link">Blog</a></li>
-        <li class="pure-menu-item"><a href="#/proyects" class="pure-menu-link">Proyects</a></li>
-        <li class="pure-menu-item"><a href="#/other" class="pure-menu-link">Other</a></li>
-      -->
-      </ul>
-    </nav>
-    <ng-view></ng-view>
-    <footer class="pure-u-1">
-      &copy; Jorge Rivera 2016
-    </footer>
-  </div>
+      <a href="#" ng-click="doShowFrm()" ng-if="!loggedIn || showFrm"><i class="fa fa-sign-in"></i> Log In</a>
+      <a href="#" ng-click="logOut()" ng-if="loggedIn"><i class="fa fa-sign-out"></i> Log Out</a>
+      <form id="loginFrm" class="pure-form" ng-if="showFrm" ng-submit="logIn()">
+      <fieldset>
+      <input type="email" placeholder="Email" ng-model="loginFrm.email">
+      <input type="password" placeholder="Password" ng-model="loginFrm.password">
+      <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+  </form>
+</div>
+-->
+<span class="pure-menu-heading">Jorge Rivera</span>
+<ul class="pure-menu-list" active-link>
+  <li class="pure-menu-item"><a href="#/home" class="pure-menu-link">Home</a></li>
+  <li class="pure-menu-item"><a href="#/resume" class="pure-menu-link">Resume</a></li>
+  <!--
+  <li class="pure-menu-item"><a href="#/blog" class="pure-menu-link">Blog</a></li>
+  <li class="pure-menu-item"><a href="#/proyects" class="pure-menu-link">Proyects</a></li>
+  <li class="pure-menu-item"><a href="#/other" class="pure-menu-link">Other</a></li>
+-->
+</ul>
+</nav>
+<ng-view></ng-view>
+<footer class="pure-u-1">
+  &copy; Jorge Rivera 2016
+</footer>
+</div>
 </body>
 </html>

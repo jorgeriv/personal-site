@@ -3,6 +3,5 @@
     .controller('mainController', ['$scope', mainController]);
 
     function mainController($scope){
-
     }
 }());

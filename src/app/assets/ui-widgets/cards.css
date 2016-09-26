@@ -2,19 +2,74 @@
 .cards {
 }
 .card{
-  background-color: #f6f6f6;
-  border: 1px solid #e0e0e0;
+  position:relative;
+  border: 1px solid #ddd;
+  background-color: #efefef;
   border-radius: 3px;
   padding: 10px 20px;
   margin: 5px;
-  color: #999;
-  font-size: 0.7rem;
+  color: #666;
+  font-size: 0.8rem;
 }
 .card h3{
   text-transform: uppercase;
   margin: 4px 0 18px 0;
 }
+.card hgroup{
+  border-bottom: 1px solid  #e0e0e0;
+  font-size: 1rem;
+  color:#373737;
+}
+.card hgroup h1, .card hgroup h2{
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.card hgroup h1{
+  text-align: left;
+  font-size: 1.2rem;
+}
+.card hgroup h2{
+  font-size: 1rem;
+  font-style: italic;
+}
+.card hgroup .right{
+  float: right;
+}
 
+.card-white{
+  background-color: white;
+  border-color: #373737;
+}
+
+.card-black{
+  background-color: #222;
+  color: #efefef;
+  border-color: #e0e0e0;
+}
+
+.card-arrow-up::before{
+  content:'';
+  display: block;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  margin: -26px auto 0 auto;
+  position: relative;
+  border:8px solid rgba(0, 0, 0, 0);
+  border-bottom: 8px solid #373737;
+}
+
+.card-arrow-down::after{
+  content:'';
+  display: block;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto -26px auto;
+  position: relative;
+  border:8px solid rgba(0, 0, 0, 0);
+  border-top: 8px solid #373737;
+}
 .card-icon{
   text-align: center;
 }
@@ -26,4 +81,8 @@
 }
 .card-icon i{
   font-size: 10em;
+}
+
+.card img{
+  width:100%;
 }

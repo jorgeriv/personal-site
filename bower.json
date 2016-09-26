@@ -24,6 +24,8 @@
     "angular-sanitize": "^1.5.8",
     "ng-tags-input": "^3.1.1",
     "font-awesome": "^4.6.3",
-    "tinymce": "^4.4.1"
+    "tinymce": "^4.4.1",
+    "angular-skrollr": "^0.2.1",
+    "skrollr": "^0.6.30"
   }
 }

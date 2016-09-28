@@ -10,6 +10,7 @@
   margin: 5px;
   color: #666;
   font-size: 0.8rem;
+  overflow: hidden;
 }
 .card h3{
   text-transform: uppercase;

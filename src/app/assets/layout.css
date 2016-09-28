@@ -61,7 +61,7 @@ cite a{
 }
 /*
 h1,h2,h3,h4,h5,h6{
-  text-shadow: -1px -1px 0 black, 2px 2px 1px white;
+text-shadow: -1px -1px 0 black, 2px 2px 1px white;
 }
 */
 .vertical-text{
@@ -199,6 +199,7 @@ footer{
 .box{
   padding:40px;
   margin-bottom: 40px;
+  min-height: 320px;
 }
 .box-right{
   margin-left: 20px;
@@ -210,4 +211,16 @@ footer{
 
 .box-left{
   margin-right: 20px;
+}
+
+#projects .card{
+  height: 580px;
+}
+
+#projects .card .card-content{
+  max-height: 300px;
+  overflow-y: hidden;
+}
+#projects .card .card-content:hover{
+  overflow-y: auto;
 }

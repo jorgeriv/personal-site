@@ -119,8 +119,8 @@
       },
       {
         "name": "PHP",
-        "proficencyLevel": "Toyed with the language",
-        "proficencyScore": 15
+        "proficencyLevel": "beginner",
+        "proficencyScore": 25
       },
       {
         "name": "Python",
@@ -203,7 +203,7 @@
       },
       {
         "name": "AWS",
-        "proficencyLevel": "Intermediate",
+        "proficencyLevel": "beginner",
         "proficencyScore": 50
       },
       {

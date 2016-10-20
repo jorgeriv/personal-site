@@ -91,3 +91,11 @@
 .card img{
   width:100%;
 }
+.card p{
+  padding: 0 8px;
+}
+.card img.interests{
+  display: inline;
+  border-radius: 10px;
+  box-shadow: -3px 3px 8px #222;
+}

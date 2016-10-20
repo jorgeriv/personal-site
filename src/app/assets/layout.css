@@ -59,11 +59,11 @@ cite{
 cite a{
   color: inherit;
 }
-/*
+
 h1,h2,h3,h4,h5,h6{
-text-shadow: -1px -1px 0 black, 2px 2px 1px white;
+  /*color:#66f;*/
+  /* text-shadow: 3px 3px 0 #e66;/* #afafaf;*/
 }
-*/
 .vertical-text{
   transform: rotate(-90deg);
   transform-origin: left top 0;
